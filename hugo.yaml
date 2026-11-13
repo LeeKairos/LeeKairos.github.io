@@ -82,7 +82,10 @@ params:
     lastUpdated: ":date_full"
 
   sidebar:
-    emoji: "⏳"
+    avatar: "img/avatar.png"
+    # emoji 已随头像启用而去掉：否则 ⏳ 会以小徽章形式压在头像右下角。
+    # 如需恢复，取消下面一行的注释即可。
+    # emoji: "⏳"
     subtitle: "在对的时间，做值得做的事。"
 
   article:
