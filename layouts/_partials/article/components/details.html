@@ -51,7 +51,7 @@
                         {{ T "article.readingTime" $Page.ReadingTime }}
                     </time>
                     <span class="article-time--wordcount">
-                        · {{ $Page.WordCount }} 字
+                        · {{ $Page.WordCount }} {{ if eq $Page.Site.Language.Lang "en" }}words{{ else }}字{{ end }}
                     </span>
                 {{ end }}
             </div>

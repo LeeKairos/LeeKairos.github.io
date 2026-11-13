@@ -1,0 +1,60 @@
+{{- /* Site override of the Stack theme's Giscus partial.
+       Only change vs. the theme version: data-lang follows the page's
+       language (en on the English site, zh-CN on the Chinese site)
+       instead of the single fixed value in hugo.yaml. */ -}}
+{{- $giscusLang := "zh-CN" -}}
+{{- if eq .Site.Language.Lang "en" -}}
+    {{- $giscusLang = "en" -}}
+{{- end -}}
+{{- with .Site.Params.comments.giscus -}}
+<script
+    src="https://giscus.app/client.js"
+    data-repo="{{- .repo -}}"
+    data-repo-id="{{- .repoID -}}"
+    data-category="{{- .category -}}"
+    data-category-id="{{- .categoryID -}}"
+    data-mapping="{{- .mapping -}}"
+    data-strict="{{- .strict -}}"
+    data-reactions-enabled="{{- .reactionsEnabled -}}"
+    data-emit-metadata="{{- .emitMetadata -}}"
+    data-input-position="{{- .inputPosition -}}"
+    data-theme="{{- .lightTheme -}}"
+    data-lang="{{- $giscusLang -}}"
+    data-loading="{{- .loading -}}"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('{{- .lightTheme -}}');
+            } else {
+                setGiscusTheme('{{- .darkTheme -}}');
+            }
+        }
+    })();
+</script>
+{{- end -}}

@@ -3,10 +3,32 @@
 
 baseURL: "https://leekairos.github.io/"
 defaultContentLanguage: "zh-cn"
+defaultContentLanguageInSubdir: false
 locale: "zh-cn"
-title: "καιρός实验室 / Kairos Lab"
 theme: "hugo-theme-stack"
 hasCJKLanguage: true
+
+# 多语言：中文（默认，根目录 /）+ 英文（/en/）
+# 浏览器语言自动识别见 layouts/_partials/footer/custom.html
+languages:
+  zh-cn:
+    languageName: "中文"
+    languageCode: "zh-CN"
+    weight: 1
+    title: "καιρός实验室 / Kairos Lab"
+    params:
+      sidebar:
+        avatar: "img/avatar.png"
+        subtitle: "在对的时间，做值得做的事。"
+  en:
+    languageName: "English"
+    languageCode: "en"
+    weight: 2
+    title: "Kairos Lab"
+    params:
+      sidebar:
+        avatar: "img/avatar.png"
+        subtitle: "At the right time, do what's worth doing."
 
 # SEO：自动生成 sitemap.xml 和 robots.txt
 # sitemap.xml 默认即生成；robots.txt 需要下面这一行
