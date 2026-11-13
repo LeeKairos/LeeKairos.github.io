@@ -20,6 +20,10 @@ languages:
       sidebar:
         avatar: "img/avatar.png"
         subtitle: "在对的时间，做值得做的事。"
+      # 中文日期格式：2026年11月13日（:date_full 在中文站会显示英文日期）
+      dateFormat:
+        published: "2006年1月2日"
+        lastUpdated: "2006年1月2日"
   en:
     languageName: "English"
     languageCode: "en"
@@ -29,6 +33,9 @@ languages:
       sidebar:
         avatar: "img/avatar.png"
         subtitle: "At the right time, do what's worth doing."
+      dateFormat:
+        published: ":date_full"
+        lastUpdated: ":date_full"
 
 # SEO：自动生成 sitemap.xml 和 robots.txt
 # sitemap.xml 默认即生成；robots.txt 需要下面这一行
