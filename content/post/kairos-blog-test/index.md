@@ -11,8 +11,6 @@ tags:
   - "Hugo"
   - "测试"
 draft: false
-# 评论暂未开启，等 Giscus 接入后再去掉这一行
-comments: false
 ---
 
 欢迎来到 Kairos Lab 的新博客。这是第一篇测试文章，用来检查 Hugo + Stack 的排版效果：标题、目录、代码块、封面图、阅读字数和预计阅读时间是不是都正常。

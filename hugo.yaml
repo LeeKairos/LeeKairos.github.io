@@ -119,26 +119,24 @@ params:
     default: "auto"
 
   # ---------------- 文章评论系统：Giscus ----------------
-  # 接入步骤（详见思源笔记 P104 文章评论系统）：
-  # 1. 仓库 Settings → General → Features → 勾选 Discussions
-  # 2. 打开 https://giscus.app ，安装 Giscus 应用并授权给 LeeKairos.github.io
-  # 3. 在 giscus.app 配好仓库、分类（Announcements）、映射（pathname），复制 repoID 和 categoryID
-  # 4. 把下面 enabled 改成 true，并填好 repoID、categoryID
+  # 已接入（2026-11-13）：仓库 Discussions 已开启，Giscus 应用已安装，
+  # giscus.app 配置：分类 Announcements、映射 pathname、主题跟随系统。
+  # 换分类或映射时，同步改 giscus.app 里的设置和下面的值。
   # 注意：字段名以安装的 Stack 主题版本的 config/_default/params.toml 为准
   comments:
-    enabled: false
+    enabled: true
     provider: "giscus"
     giscus:
       repo: "LeeKairos/LeeKairos.github.io"
-      repoID: ""
+      repoID: "R_kgDOVsrhSg"
       category: "Announcements"
-      categoryID: ""
+      categoryID: "DIC_kwDOVsrhSs4DLBf3"
       mapping: "pathname"
       lightTheme: "light"
       darkTheme: "dark_dimmed"
       reactionsEnabled: 1
       emitMetadata: 0
-      inputPosition: "top"
+      inputPosition: "bottom"
       lang: "zh-CN"
       strict: 0
       loading: "lazy"
