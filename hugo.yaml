@@ -73,6 +73,11 @@ params:
   mainSections: ["post"]
   rssFullContent: true
 
+  # Favicon: reuses the same Kairos logo mark as the sidebar avatar
+  # (assets/img/avatar.png, 512×512). Stack emits it as
+  # <link rel="shortcut icon" ...> from layouts/_partials/head/head.html.
+  favicon: "img/avatar.png"
+
   footer:
     since: 2026
     customText: ""
