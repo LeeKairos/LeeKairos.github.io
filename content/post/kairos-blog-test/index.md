@@ -3,7 +3,7 @@ title: "测试文章：Kairos Lab 博客上线了"
 description: "这是 Hugo + Stack 博客的第一篇测试文章，用来检查排版、代码块、目录和封面图是否正常。"
 slug: "kairos-blog-test"
 date: 2026-11-13T12:00:00+08:00
-image: "https://picsum.photos/seed/kairos/1200/630"
+image: "cover.jpg"
 categories:
   - "从收藏到第二大脑"
 tags:
