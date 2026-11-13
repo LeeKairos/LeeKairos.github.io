@@ -53,12 +53,14 @@ related:
       weight: 200
 
 menu:
-  social:
-    - identifier: "github"
-      name: "GitHub"
-      url: "https://github.com/LeeKairos"
-      params:
-        icon: "brand-github"
+  # social: (hidden for now — GitHub is the blog's backend, not a showcase;
+  # uncomment to show the GitHub icon in the left sidebar again)
+  # social:
+  #   - identifier: "github"
+  #     name: "GitHub"
+  #     url: "https://github.com/LeeKairos"
+  #     params:
+  #       icon: "brand-github"
 
 # ---------------- 访问量统计：Google Analytics 4 ----------------
 # 去 https://analytics.google.com 建账号并创建媒体资源，
