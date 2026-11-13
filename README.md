@@ -1,10 +1,9 @@
 # καιρός实验室 / Kairos Lab
 
-Lee 的个人主页。
+Lee 的个人博客：Hugo + Stack 主题，部署在 GitHub Pages。
 
-Kairos（καιρός）是古希腊语中的“恰当时机”——不是时钟上流逝的时间（Chronos），而是值得把握的那个时刻。
+- 线上地址：https://leekairos.github.io/
+- 写文章：在 `content/post/` 里新建 Markdown 文件，本地 `hugo server -D` 预览，推送到 main 分支后自动部署
+- 完整设计文档：思源笔记 Hermes Note → P104_博客系统
 
-这里记录一个工程师公开搭建第二大脑的过程：知识管理、知识系统、终身学习。真实数据、真实失败，没有空洞的理论。
-
-- 主页：https://leekairos.github.io
-- GitHub：https://github.com/LeeKairos
+主题：[CaiJimmy/hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack)（GPL-3.0，见 `themes/hugo-theme-stack/LICENSE`）

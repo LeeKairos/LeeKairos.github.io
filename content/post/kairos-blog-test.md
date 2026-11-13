@@ -1,0 +1,72 @@
+---
+title: "测试文章：Kairos Lab 博客上线了"
+description: "这是 Hugo + Stack 博客的第一篇测试文章，用来检查排版、代码块、目录和封面图是否正常。"
+slug: "kairos-blog-test"
+date: 2026-11-13T12:00:00+08:00
+image: "https://picsum.photos/seed/kairos/1200/630"
+categories:
+  - "从收藏到第二大脑"
+tags:
+  - "知识管理"
+  - "Hugo"
+  - "测试"
+draft: false
+# 评论暂未开启，等 Giscus 接入后再去掉这一行
+comments: false
+---
+
+欢迎来到 Kairos Lab 的新博客。这是第一篇测试文章，用来检查 Hugo + Stack 的排版效果：标题、目录、代码块、封面图、阅读字数和预计阅读时间是不是都正常。
+
+如果你看到这篇文章，说明博客已经成功上线了。
+
+## 为什么用 Hugo + Stack
+
+Hugo 是用 Go 写的静态网站生成器，最大的特点是快：一千篇文章也能在几秒内生成完。它不需要数据库和服务器，写好的 Markdown 一推送就自动变成网站。
+
+Stack 是 Hugo 的卡片式博客主题，专为写博客设计，自带这些能力：
+
+- 响应式布局，手机和电脑都好看
+- 暗色模式切换，右上角就能换
+- 本地搜索、归档页、分类和标签
+- 文章目录、阅读时长、相关文章推荐
+
+## 本地预览与发布
+
+本地写文章时，先启动预览服务，改完保存就能在浏览器里实时看到效果：
+
+```bash
+# 启动本地预览（-D 表示同时显示草稿）
+hugo server -D
+
+# 打开 http://localhost:1313 查看
+```
+
+确认没问题后，推送到 GitHub 就行，Actions 会自动构建并发布：
+
+```bash
+git add content/post/kairos-blog-test.md
+git commit -m "发布测试文章"
+git push origin main
+```
+
+## 文章的 front matter 长什么样
+
+每篇文章开头都有一段 front matter，用来写标题、日期、分类和标签：
+
+```yaml
+---
+title: "收藏了 1000 篇文章，为什么一篇都用不上？"
+date: 2026-11-14
+categories: ["从收藏到第二大脑"]
+tags: ["知识管理", "收藏", "Inbox"]
+draft: false
+---
+```
+
+`draft: true` 的文章是草稿，不会发布；改成 `false` 才会出现在网站上。
+
+## 接下来会写什么
+
+第一期正式文章已经写好了，标题是《收藏了 1000 篇文章，为什么一篇都用不上？》，讲的是我自己的真实数字：621 篇笔记，337 篇躺在 Inbox，知识库里只有 16 篇。
+
+这篇测试文章确认排版没问题后，第一期就会发出来。敬请期待。
