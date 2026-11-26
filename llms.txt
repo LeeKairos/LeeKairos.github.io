@@ -1,0 +1,22 @@
+# Kairos Lab
+
+> A personal blog about systems architecture, knowledge management, Obsidian, photography and light, and tennis. Articles are published in Chinese (default) and English; English versions live under /en/. The blog also hosts free online mini-tools.
+
+## Articles
+
+- [收藏了 7902 篇文章，为什么一篇都用不上？](https://leekairos.com/p/episode-01-7902-articles/): Saved 7,902 articles across WeRead, Cubox and Zotero but can't find one when needed. The problem isn't memory, it's process: 337 of 621 notes sit in the Inbox, only 16 ever became knowledge.
+- [I Saved 7,902 Articles — So Why Can't I Use a Single One?](https://leekairos.com/en/p/episode-01-7902-articles/): English version of the article above.
+- [IT 工程师必须关注的 100 个网站、论坛与博客（通用版）](https://leekairos.com/p/100-websites-it-engineers-should-follow/): 100 core sources distilled from several hundred candidates, covering frontend, backend, mobile, data, cloud-native, security and AI, with four selection criteria.
+- [100 Websites, Forums & Blogs Every IT Engineer Should Follow](https://leekairos.com/en/p/100-websites-it-engineers-should-follow/): English version of the list above.
+
+## Tools
+
+- [在线番茄钟 / Online Pomodoro Timer](https://leekairos.com/tools/pomodoro/): Pomodoro timer, 25/5/15 minutes, shareable via URL. English: https://leekairos.com/en/tools/pomodoro/
+- [VARK 学习风格测评 / VARK Learning Styles Assessment](https://leekairos.com/tools/vark/): 16 scenario questions, Visual/Aural/Read-Write/Kinesthetic result, shareable via URL. English: https://leekairos.com/en/tools/vark/
+- [图片压缩 + 水印 / Image Compress + Watermark](https://leekairos.com/tools/img-compress-watermark/): Compress images and add a watermark, runs locally in the browser. English: https://leekairos.com/en/tools/img-compress-watermark/
+- [DDL 表结构文档生成 / DDL Doc Generator](https://leekairos.com/tools/ddl-doc-gen/): Generate database table documentation from DDL. English: https://leekairos.com/en/tools/ddl-doc-gen/
+
+## Optional
+
+- [All tools](https://leekairos.com/tools/): Hub page listing every free tool on the blog.
+- [Knowledge management articles](https://leekairos.com/categories/knowledge-management/): All articles in the knowledge-management category.
